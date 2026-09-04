@@ -52,11 +52,7 @@ const Certificates = () => {
                         <p>JavaScript-ES6-DOM</p>
                     </div>
                     <div className="btn">
-<<<<<<< HEAD
-                        <a href="ude.my/UC-8d91dde7-5c7c-41b8-9a0a-87da022bbb22">
-=======
                         <a href="https://ude.my/UC-8d91dde7-5c7c-41b8-9a0a-87da022bbb22">
->>>>>>> d40ba46 (fix design)
                             <button>View Certificate <BsArrowUpRight/></button>
                         </a>
                     </div>
