@@ -90,7 +90,7 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                padding-left:10.33vmax ;
+                padding-left:8.33vmax ;
                 > div{
                     border: none;
                     padding-top: 3rem;
@@ -100,6 +100,11 @@
                     }
                   > div {
                     flex-direction: column;
+                    > a{
+                      &:first-of-type{
+                        padding: 1rem 2rem;
+                      }
+                    }
                     }
                 }
             }
