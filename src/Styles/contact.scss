@@ -1,0 +1,121 @@
+@use "global" as *;
+
+#contact {
+  width: 100%;
+  //background-color: red;
+  > h2 {
+    margin: 1rem auto;
+    // text-align: center;
+    border-bottom: 2px solid $color6;
+    width: fit-content;
+    font-size: 2.5rem;
+  }
+  > .box {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 13.33vmax;
+    // background-color: palegreen;
+    > section {
+      //width: 100%;
+      &:first-of-type {
+        width: 40%;
+        height: 25rem;
+        background: $color5;
+        border-radius: 10px;
+        padding: 0 1rem;
+
+        > div {
+          display: flex;
+          padding: 0.5rem;
+          margin-top: 12px;
+          border-bottom: .1px solid #5a5f63;
+          > svg {
+            color: $color3;
+            font-size: 1.6rem;
+            margin: 0.5rem;
+            padding: 4px;
+            border: 1px solid $color3;
+            border-radius: 50%;
+          }
+          > .msg {
+            color: #fff;
+            > h5 {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      &:last-of-type {
+        width: 55%;
+        height: 25rem;
+        border: 1px solid $color6;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+
+        >div{
+            width: 100%;
+            height: 100%;
+           // border: 1px solid #1f1e1e;
+            border-radius: 15px;
+
+            > form > label{
+                display: block;
+                margin-top: .7rem;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            >form >input{
+                background-color: transparent;
+                width: 100%;
+                border:1px solid #201f1f;
+                padding: 10px 5px;
+                border-radius: 8px;
+                outline: none;
+            }
+            > form > textarea{
+              background-color: transparent;
+              width: 100%;
+              height: 5rem;
+              border-radius: 8px;
+              outline: none;
+            }
+            >form > button{
+              width: 100%;
+              background-color: $color3;
+              color: #fff;
+              padding: 10px 5px;
+              border: none;
+              border-radius: 8px;
+              font-size: 1rem;
+              margin-top: 1rem;
+              font-weight: 700;
+            }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #contact {
+    margin: 4rem 0;
+
+    > .box {
+      flex-direction: column;
+      padding: 0 2rem;
+
+      > section {
+        width: 100%;
+        &:first-of-type {
+          width: 100%;
+          height: 25rem;
+        }
+        &:last-of-type {
+          width: 100%;
+          height: 23rem;
+        }
+      }
+    }
+  }
+}

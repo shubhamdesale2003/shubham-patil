@@ -1,0 +1,121 @@
+@use "global" as *;
+
+.timeline {
+  width: 100%;
+  height: 100vh;
+  background-color: $color1;
+  //padding: 0 9.33vmax;
+
+  > .timelineBox {
+    width: 100%;
+    position: relative;
+    // background-color: red;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: $color5;
+      top: 0%;
+      bottom: 0%;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    > .timelineItem {
+      padding: 1rem 3rem;
+      position: relative;
+      //background-color: red;
+      width: 50%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: $color1;
+        border: 4px solid $color5;
+        top: 65px;
+        border-radius: 50%;
+        z-index: 1;
+        animation: upanddown 0.3s infinite ease-in alternate;
+      }
+
+      > div {
+        padding: 20px 30px;
+        background-color: $color5;
+        color: $color1;
+        border-radius: 6px;
+        > h3 {
+          margin: 15px 0;
+
+          > svg {
+            color: $color3;
+            font-size: 1.5rem;
+          }
+        }
+        p {
+          margin: 5px 0;
+          letter-spacing: 1px;
+          .calender {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .leftTimeline {
+      left: 0%;
+    }
+    .rightTimeline {
+      left: 50%;
+      &::after {
+        left: -16px;
+        animation: upupdowndown 0.5s infinite ease-in alternate;
+      }
+    }
+  }
+}
+
+@keyframes upanddown {
+  to {
+    transform: translateY(-5px);
+  }
+}
+@keyframes upupdowndown {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .timeline {
+    .timelineBox::after {
+      left: 31px;
+    }
+
+    .timelineBox {
+      > .timelineItem {
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 2rem;
+      }
+
+      .rightTimeline {
+        left: 0%;
+      }
+      .leftTimeline,
+      .rightTimeline {
+        &::after {
+          left: 15px;
+        }
+      }
+    }
+  }
+}
