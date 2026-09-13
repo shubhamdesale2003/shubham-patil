@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../assets/me.jpeg";
+import m2 from "../assets/m2 (3).png";
 import "../Styles/home.scss";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
@@ -39,7 +39,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <img src={me} alt="shubham_pic" />
+        <img src={m2} alt="shubham_pic" />
       </section>
     </div>
   );

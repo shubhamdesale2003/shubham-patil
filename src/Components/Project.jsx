@@ -5,8 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import "../Styles/projects.scss";
 
-import project from "../assets/blog.png";
 import portfolio from "../assets/portfolioME.png";
+import project from "../assets/blog.png";
 
 const Project = () => {
   return (
@@ -27,7 +27,7 @@ const Project = () => {
           >
             {/* Portfolio */}
             <div className="projectItem">
-              <img src={portfolio} alt="Personal Portfolio" />
+              <img src={project} alt="Personal Portfolio" />
 
               <aside>
                 <h3>Personal Portfolio</h3>
@@ -67,7 +67,7 @@ const Project = () => {
                 </p>
 
                 <a
-                  href="https://client-sepia-iota.vercel.app/"
+                  href="YOUR_BLOG_LINK"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

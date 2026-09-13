@@ -1,4 +1,4 @@
-@use 'global';
+@use "global";
 
 #home {
   width: 100%;
@@ -51,14 +51,14 @@
         }
       }
     }
-      &:last-of-type {
+    &:last-of-type {
       border-top: 1px solid global.$color6_2;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
       overflow-x: hidden;
-        
+
       &::after {
         content: "";
         width: 30vmax;
@@ -67,6 +67,7 @@
         position: absolute;
         z-index: -1;
         border-radius: 50%;
+        
       }
 
       > img {
@@ -79,42 +80,42 @@
   }
 }
 
-@media screen and (max-width:668px){
-    #home{
-        height: unset;
-        flex-direction: column-reverse;
+@media screen and (max-width: 668px) {
+  #home {
+    height: unset;
+    flex-direction: column-reverse;
 
-        > section{
-             &:first-of-type {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                padding-left:8.33vmax ;
-                > div{
-                    border: none;
-                    padding-top: 3rem;
-                  > h1 {
-                    font: 900 2.5rem global.$text1;
-                    margin-left: -5rem;
-                    }
-                  > div {
-                    flex-direction: column;
-                    > a{
-                      &:first-of-type{
-                        padding: 1rem 2rem;
-                      }
-                    }
-                    }
-                }
+    > section {
+      &:first-of-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 8.33vmax;
+        > div {
+          border: none;
+          padding-top: 3rem;
+          > h1 {
+            font: 900 2.5rem global.$text1;
+            margin-left: -5rem;
+          }
+          > div {
+            flex-direction: column;
+            > a {
+              &:first-of-type {
+                padding: 1rem 2rem;
+              }
             }
-            &:last-of-type {
-             border: none;
-             > img{
-                width: 40vmax;
-                height: 40vmax;
-             }
+          }
+        }
       }
-     }
+      &:last-of-type {
+        border: none;
+        > img {
+          width: 40vmax;
+          height: 40vmax;
+        }
+      }
+    }
   }
 }
