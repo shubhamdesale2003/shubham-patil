@@ -27,7 +27,7 @@ const Project = () => {
           >
             {/* Portfolio */}
             <div className="projectItem">
-              <img src={project} alt="Personal Portfolio" />
+              <img src={portfolio} alt="Personal Portfolio" />
 
               <aside>
                 <h3>Personal Portfolio</h3>
